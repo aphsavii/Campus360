@@ -1,0 +1,21 @@
+{
+  "name": "campus360",
+  "runArgs": ["--name", "campus360"],
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [
+    4200,
+    5001,
+    27017
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "angular.ng-template",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}
