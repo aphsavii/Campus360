@@ -26,18 +26,12 @@ export class LandingPageComponent {
       return;
     }
 
-    this.http.get<any[]>(`http://localhost:3000/api/search?term=${this.searchTerm}`).subscribe(
+    this.http.get<any[]>(`http://localhost:3000/search?term=${this.searchTerm}`).subscribe(
       (data) => {
         this.searchResults = data;
         this.loading = false;
         console.log(this.searchResults);
-
-      },
-      (error) => {
-        console.error('Error fetching data:', error);
-        this.error = 'An error occurred while fetching data.';
-        this.loading = false;
-      }
+  }
     );
   }
 }

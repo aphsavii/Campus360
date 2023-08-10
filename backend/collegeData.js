@@ -6,5 +6,4 @@ const collegeSchema = new mongoose.Schema({
 });
 
 const College = mongoose.model('College', collegeSchema, 'collegeData');
-
 module.exports = College;

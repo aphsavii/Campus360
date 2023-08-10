@@ -8,7 +8,7 @@ import { ChangeImageService } from 'src/app/shared/change-image.service';
 export class GallaryItemComponent {
   constructor(private changeImageService: ChangeImageService) { }
   changeImage() {
-    this.changeImageService.refreshData('IMG20230711113625.jpg');
+    this.changeImageService.refreshData('IMG20230809191845.jpg');
     console.log('changeImage');
   }
 }

@@ -6,10 +6,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./vr.component.css']
 })
 export class VrComponent {
-  imgurl = '../../assets/';
+  imgurl = '';
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-   this.imgurl+=this.route.snapshot.params['imgurl'];
+   this.imgurl='../../assets/'+this.route.snapshot.params['imgurl'];
   }
 }

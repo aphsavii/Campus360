@@ -12,6 +12,7 @@ import { GallaryItemComponent } from './gallary/gallary-item/gallary-item.compon
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchBoxComponent } from './landing-page/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     GallaryComponent,
     GallaryItemComponent,
     LandingPageComponent,
+    SearchBoxComponent,
   ],
   imports: [
     BrowserModule,

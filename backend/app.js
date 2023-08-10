@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Search endpoint to get suggestions
-app.get('/api/search', async (req, res) => {
+app.get('/search', async (req, res) => {
   try {
     const searchTerm = req.query.term || ''; // Set an empty string if searchTerm is not provided
     const regex = new RegExp(searchTerm, 'i'); // Case-insensitive search

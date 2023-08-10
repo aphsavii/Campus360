@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./iframe.component.css']
 })
 export class IframeComponent {
-  imgurl = './../assets/IMG20230711113625.jpg';
+  imgurl = '';
   private subscription: Subscription | undefined;
 
   constructor(public sanitizer: DomSanitizer,private changeImageService: ChangeImageService) { }
